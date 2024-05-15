@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatroom</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form class="form-username">
-        <h1>Join Chatroom</h1>
-        <p>Username</p>
-        <input type="text" id="username-input" placeholder="Username" required>
-        <button id="join-btn" type="submit">Join Chat</button>
+      <h1>Join Chatroom</h1>
+      <p>Username</p>
+      <input type="text" id="username-input" placeholder="Username" required />
+      <button id="join-btn" type="submit">Join Chat</button>
     </form>
     <div class="chatroom-container">
-        <div class="chatroom-header">
-            Chatroom
-        </div>
-        <div class="messages" id="messages-container">
-            <!-- <div class="message received">Hey</div>
+      <div class="chatroom-header">Chatroom</div>
+      <div class="messages" id="messages-container">
+        <!-- <div class="message received">Hey</div>
             <div class="message sent">Hello</div> -->
-        </div>
-        <div>
-            <input type="text" id="message-input" placeholder="Enter Message">
-            <button id="send-btn">Send</button>
-            <button id="exit-btn">Exit</button>
-        </div>
+      </div>
+      <div class="input-box">
+        <input type="text" id="message-input" placeholder="Enter Message" />
+        <button id="send-btn">Send</button>
+        <button id="exit-btn">Exit</button>
+      </div>
     </div>
-
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
